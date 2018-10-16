@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Eater-Regular.ttf">
+            <string>Eater-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="chZ-7K-peR">
+                                <rect key="frame" x="0.0" y="20" width="320" height="41"/>
+                                <color key="backgroundColor" red="1" green="0.46855348130000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eIk-g1-SsU"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Snacks"/>
+                                    <segment title="Drinks"/>
+                                    <segment title="Desserts"/>
+                                </segments>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="changeTreatType:" destination="BYZ-38-t0r" eventType="valueChanged" id="PiU-v1-MW4"/>
+                                </connections>
+                            </segmentedControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d4D-Cx-phg">
+                                <rect key="frame" x="0.0" y="64" width="320" height="936"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xmi-jh-kqk">
+                                        <rect key="frame" x="0.0" y="9" width="320" height="992"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="XcP-tX-v86">
+                                                <rect key="frame" x="10" y="280" width="300" height="613"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mummy Brie" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDJ-vR-sVS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="300" height="30"/>
+                                                        <fontDescription key="fontDescription" name="Eater-Regular" family="Eater" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gOH-ng-fRW">
+                                                        <rect key="frame" x="0.0" y="30" width="300" height="214"/>
+                                                        <color key="backgroundColor" red="1" green="0.46855348130000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="214" id="bCS-kV-dhI"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ip8-BQ-GRE">
+                                                        <rect key="frame" x="0.0" y="244" width="300" height="369"/>
+                                                        <color key="backgroundColor" red="1" green="0.46855348130000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="369" id="d8N-ql-C3Y"/>
+                                                        </constraints>
+                                                        <string key="text">Preheat oven to 400°. On a floured work surface, unroll puff pastry and cut into 1” strips. Wrap strips around brie like a mummy. Whisk together egg and milk and brush over pastry. Transfer brie to a parchment-lined baking sheet. Bake until brie is warmed through and gooey and puff pastry is deeply golden, 20 minutes.
+For eyes, place two mini pepperonis into two sliced olives. Serve with crackers.
+</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mummyBrie" translatesAutoresizingMaskIntoConstraints="NO" id="4Lg-1S-ZRw">
+                                                <rect key="frame" x="10" y="52" width="300" height="220"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="220" id="hN5-Mb-POs"/>
+                                                    <constraint firstAttribute="width" constant="300" id="q2C-HD-trJ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="225" translatesAutoresizingMaskIntoConstraints="NO" id="2Nx-wt-GDt">
+                                                <rect key="frame" x="8" y="4" width="305" height="40"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5gT-Rt-cS3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="2w7-oF-kh7"/>
+                                                            <constraint firstAttribute="width" constant="40" id="Gxr-rM-Pz9"/>
+                                                            <constraint firstAttribute="height" constant="40" id="i4R-Ru-Gn4"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="kdp-0h-AwU"/>
+                                                        </constraints>
+                                                        <state key="normal" image="leftArrow"/>
+                                                        <connections>
+                                                            <action selector="previousButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h2U-8q-u9T"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHa-mW-Bsq">
+                                                        <rect key="frame" x="265" y="0.0" width="40" height="40"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="40" id="R1n-HC-Hyq"/>
+                                                            <constraint firstAttribute="width" constant="40" id="lIU-e6-Kuy"/>
+                                                        </constraints>
+                                                        <state key="normal" image="rightArrow"/>
+                                                        <connections>
+                                                            <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="n0Q-SN-BzK"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="305" id="1Yi-6X-LBT"/>
+                                                    <constraint firstAttribute="height" constant="40" id="Djb-Zz-KT5"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="0.46855348126759933" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="250" constant="992" id="Efe-zr-4lA"/>
+                                            <constraint firstItem="XcP-tX-v86" firstAttribute="top" secondItem="4Lg-1S-ZRw" secondAttribute="bottom" constant="8" symbolic="YES" id="RrX-L3-JCI"/>
+                                            <constraint firstAttribute="trailing" secondItem="2Nx-wt-GDt" secondAttribute="trailing" constant="7" id="hA9-uT-Z7p"/>
+                                            <constraint firstItem="2Nx-wt-GDt" firstAttribute="leading" secondItem="xmi-jh-kqk" secondAttribute="leading" constant="8" id="m9e-7H-khh"/>
+                                            <constraint firstItem="4Lg-1S-ZRw" firstAttribute="top" secondItem="2Nx-wt-GDt" secondAttribute="bottom" constant="8" symbolic="YES" id="paV-L6-i7T"/>
+                                            <constraint firstItem="4Lg-1S-ZRw" firstAttribute="leading" secondItem="XcP-tX-v86" secondAttribute="leading" priority="750" id="yDs-7b-clp"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2Nx-wt-GDt" firstAttribute="top" secondItem="d4D-Cx-phg" secondAttribute="top" constant="13" id="E7t-do-CwM"/>
+                                    <constraint firstItem="4Lg-1S-ZRw" firstAttribute="centerX" secondItem="d4D-Cx-phg" secondAttribute="centerX" id="IDz-em-c1r"/>
+                                    <constraint firstItem="xmi-jh-kqk" firstAttribute="top" secondItem="d4D-Cx-phg" secondAttribute="top" constant="9" id="MMj-wD-6Gb"/>
+                                    <constraint firstAttribute="trailing" secondItem="xmi-jh-kqk" secondAttribute="trailing" id="SKP-L5-BF5"/>
+                                    <constraint firstItem="xmi-jh-kqk" firstAttribute="leading" secondItem="d4D-Cx-phg" secondAttribute="leading" id="W28-tO-epz"/>
+                                    <constraint firstAttribute="bottom" secondItem="xmi-jh-kqk" secondAttribute="bottom" constant="-65" id="flx-q5-Jk1"/>
+                                    <constraint firstAttribute="trailing" secondItem="XcP-tX-v86" secondAttribute="trailing" constant="10" id="hgv-l0-uqX"/>
+                                    <constraint firstItem="XcP-tX-v86" firstAttribute="centerX" secondItem="d4D-Cx-phg" secondAttribute="centerX" id="qzQ-pp-hVG"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.46855348130000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xmi-jh-kqk" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="55D-iH-CjO"/>
+                            <constraint firstItem="d4D-Cx-phg" firstAttribute="top" secondItem="chZ-7K-peR" secondAttribute="bottom" constant="4" id="FN1-tr-JxO"/>
+                            <constraint firstItem="d4D-Cx-phg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UIY-kI-A7C"/>
+                            <constraint firstItem="chZ-7K-peR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Zby-Yo-tYh"/>
+                            <constraint firstItem="d4D-Cx-phg" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="h8t-HL-99d"/>
+                            <constraint firstItem="d4D-Cx-phg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="iit-de-TRd"/>
+                            <constraint firstItem="chZ-7K-peR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qC9-JZ-48d"/>
+                            <constraint firstItem="chZ-7K-peR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="v8K-Ei-n9f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <size key="freeformSize" width="320" height="1000"/>
+                    <connections>
+                        <outlet property="TreatType" destination="chZ-7K-peR" id="iux-bU-zaF"/>
+                        <outlet property="backButton" destination="5gT-Rt-cS3" id="BGZ-q3-sCp"/>
+                        <outlet property="fowardButton" destination="dHa-mW-Bsq" id="o6m-t1-IO3"/>
+                        <outlet property="recipiDirections" destination="ip8-BQ-GRE" id="42f-6S-Qrq"/>
+                        <outlet property="recipiIngredientes" destination="gOH-ng-fRW" id="aXJ-5Q-iW5"/>
+                        <outlet property="recipiName" destination="wDJ-vR-sVS" id="uj0-Yl-1Hg"/>
+                        <outlet property="recipiPicture" destination="4Lg-1S-ZRw" id="oWF-TU-Xnd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="134.1549295774648" y="131.25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="leftArrow" width="123" height="142"/>
+        <image name="mummyBrie" width="1250" height="917"/>
+        <image name="rightArrow" width="123" height="142"/>
+    </resources>
+</document>
