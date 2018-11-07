@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#821000</color>
+    <color name="colorPrimaryDark">#460000</color>
+    <color name="colorAccent">#aa492b</color>
+    <color name="background">#b8442a</color>
+    <color name="background_material_light">#f72400</color>
+    <color name="text_color_primary">#ffffff</color>
+
+</resources>
+<!--chose pallet from https://material.io/tools/color/#!/?view.left=0&view.right=1&primary.color=751b01-->

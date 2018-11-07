@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Lab5</string>
+    <string name="gobble">Gobble Gobble!</string>
+    <string name="turkeyEater">Turkey Eater Name</string>
+</resources>

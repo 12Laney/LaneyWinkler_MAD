@@ -1,0 +1,18 @@
+<resources>
+
+    <style name="AppTheme" parent="android:ThemeOverlay.Material.Dark.ActionBar">
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:background">@color/background</item>
+    </style>
+
+    <style name="ThanksgivingTheme" parent="android:Theme.Material.Light.DarkActionBar" >
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="android:colorBackground">@color/background</item>
+        <item name="android:textColorPrimary">@color/text_color_primary</item>
+    </style>
+
+</resources>
