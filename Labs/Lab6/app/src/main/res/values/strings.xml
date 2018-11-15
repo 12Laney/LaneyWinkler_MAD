@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Lab6</string>
+    <string name= "heading">Movie Suggester</string>
+    <string name="movie_button">Find Movie</string>
+    <string name="toggle_on">Fantasy</string>
+    <string name="toggle_off">SciFi</string>
+    <string-array name="timeline">
+        <item>past 10 years</item>
+        <item>past 20 years</item>
+        <item>past 30 years</item>
+    </string-array>
+    <string name="radio1">1</string>
+    <string name="radio2">3</string>
+    <string name="radio3">5+</string>
+    <string name="movieBuddy">Name of Movie Buddy</string>
+</resources>
