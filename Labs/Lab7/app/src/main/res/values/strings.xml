@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Lab7</string>
+    <string name="title">Game of Thrones Reminder</string>
+    <string name="chosen_house">Choose a house</string>
+    <string name="button">Remind Me</string>
+    <string-array name="house">
+        <item>Baratheon</item>
+        <item>Greyjoy</item>
+        <item>Lannister</item>
+        <item>Martell</item>
+        <item>Stark</item>
+        <item>Targaryen</item>
+    </string-array>
+    <string name = "learnButton">Learn More</string>
+    <string name = "houseName">House Name</string>
+    <string name = "houseDescription">House Baratheon is the principal house in the Stormlands. The sigil of house Baratheon is a crowned black stag on a field of gold. Important members of this house include Robert Baratheon, Stannis Baratheon, and Renly Baratheon.</string>
+</resources>
